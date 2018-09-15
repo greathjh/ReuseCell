@@ -15,6 +15,7 @@
 		044F9534214CA0F400721831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9533214CA0F400721831 /* main.m */; };
 		044F953E214CA0F500721831 /* ReuseCellProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F953D214CA0F500721831 /* ReuseCellProTests.m */; };
 		044F9549214CA0F500721831 /* ReuseCellProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9548214CA0F500721831 /* ReuseCellProUITests.m */; };
+		F85441947F640EC1544377C0 /* libPods-ReuseCellPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		044F9544214CA0F500721831 /* ReuseCellProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReuseCellProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044F9548214CA0F500721831 /* ReuseCellProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReuseCellProUITests.m; sourceTree = "<group>"; };
 		044F954A214CA0F500721831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE505E07E76D01FCF7BC972 /* Pods-ReuseCellPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCellPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReuseCellPro/Pods-ReuseCellPro.debug.xcconfig"; sourceTree = "<group>"; };
+		5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReuseCellPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBB2F0E3850BCC136875527 /* Pods-ReuseCellPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCellPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReuseCellPro/Pods-ReuseCellPro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85441947F640EC1544377C0 /* libPods-ReuseCellPro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				044F953C214CA0F500721831 /* ReuseCellProTests */,
 				044F9547214CA0F500721831 /* ReuseCellProUITests */,
 				044F9522214CA0F400721831 /* Products */,
+				786085298A5FBA543BE33964 /* Pods */,
+				3BD242799BEEB8281DE6C7EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = ReuseCellProUITests;
 			sourceTree = "<group>";
 		};
+		3BD242799BEEB8281DE6C7EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		786085298A5FBA543BE33964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DE505E07E76D01FCF7BC972 /* Pods-ReuseCellPro.debug.xcconfig */,
+				6FBB2F0E3850BCC136875527 /* Pods-ReuseCellPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044F954D214CA0F500721831 /* Build configuration list for PBXNativeTarget "ReuseCellPro" */;
 			buildPhases = (
+				BB3C7D0AD2117699AFAC06C8 /* [CP] Check Pods Manifest.lock */,
 				044F951D214CA0F400721831 /* Sources */,
 				044F951E214CA0F400721831 /* Frameworks */,
 				044F951F214CA0F400721831 /* Resources */,
@@ -259,6 +284,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB3C7D0AD2117699AFAC06C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReuseCellPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		044F951D214CA0F400721831 /* Sources */ = {
@@ -428,6 +474,7 @@
 		};
 		044F954E214CA0F500721831 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE505E07E76D01FCF7BC972 /* Pods-ReuseCellPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +489,7 @@
 		};
 		044F954F214CA0F500721831 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBB2F0E3850BCC136875527 /* Pods-ReuseCellPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
