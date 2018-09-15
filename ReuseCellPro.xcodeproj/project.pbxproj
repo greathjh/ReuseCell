@@ -15,6 +15,9 @@
 		044F9534214CA0F400721831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9533214CA0F400721831 /* main.m */; };
 		044F953E214CA0F500721831 /* ReuseCellProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F953D214CA0F500721831 /* ReuseCellProTests.m */; };
 		044F9549214CA0F500721831 /* ReuseCellProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9548214CA0F500721831 /* ReuseCellProUITests.m */; };
+		044F956B214D4E5F00721831 /* NormalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9568214D4E5F00721831 /* NormalModel.m */; };
+		044F956C214D4E5F00721831 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9569214D4E5F00721831 /* NormalTableViewCell.m */; };
+		044F9572214D4E6E00721831 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9570214D4E6E00721831 /* EXTScope.m */; };
 		F85441947F640EC1544377C0 /* libPods-ReuseCellPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,14 @@
 		044F9544214CA0F500721831 /* ReuseCellProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReuseCellProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044F9548214CA0F500721831 /* ReuseCellProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReuseCellProUITests.m; sourceTree = "<group>"; };
 		044F954A214CA0F500721831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044F9567214D4E5F00721831 /* NormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
+		044F9568214D4E5F00721831 /* NormalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalModel.m; sourceTree = "<group>"; };
+		044F9569214D4E5F00721831 /* NormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
+		044F956A214D4E5F00721831 /* NormalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalModel.h; sourceTree = "<group>"; };
+		044F956F214D4E6E00721831 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		044F9570214D4E6E00721831 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		044F9571214D4E6E00721831 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		044F9573214D4E9400721831 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3DE505E07E76D01FCF7BC972 /* Pods-ReuseCellPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCellPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReuseCellPro/Pods-ReuseCellPro.debug.xcconfig"; sourceTree = "<group>"; };
 		5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReuseCellPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBB2F0E3850BCC136875527 /* Pods-ReuseCellPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCellPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReuseCellPro/Pods-ReuseCellPro.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,8 +119,11 @@
 		044F9523214CA0F400721831 /* ReuseCellPro */ = {
 			isa = PBXGroup;
 			children = (
+				044F956D214D4E6E00721831 /* libs */,
+				044F9566214D4E5F00721831 /* cell重用 */,
 				044F9524214CA0F400721831 /* AppDelegate.h */,
 				044F9525214CA0F400721831 /* AppDelegate.m */,
+				044F9573214D4E9400721831 /* PrefixHeader.pch */,
 				044F9527214CA0F400721831 /* ViewController.h */,
 				044F9528214CA0F400721831 /* ViewController.m */,
 				044F952A214CA0F400721831 /* Main.storyboard */,
@@ -137,6 +151,35 @@
 				044F954A214CA0F500721831 /* Info.plist */,
 			);
 			path = ReuseCellProUITests;
+			sourceTree = "<group>";
+		};
+		044F9566214D4E5F00721831 /* cell重用 */ = {
+			isa = PBXGroup;
+			children = (
+				044F9567214D4E5F00721831 /* NormalTableViewCell.h */,
+				044F9569214D4E5F00721831 /* NormalTableViewCell.m */,
+				044F9568214D4E5F00721831 /* NormalModel.m */,
+				044F956A214D4E5F00721831 /* NormalModel.h */,
+			);
+			path = "cell重用";
+			sourceTree = "<group>";
+		};
+		044F956D214D4E6E00721831 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				044F956E214D4E6E00721831 /* EXTScope */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		044F956E214D4E6E00721831 /* EXTScope */ = {
+			isa = PBXGroup;
+			children = (
+				044F956F214D4E6E00721831 /* metamacros.h */,
+				044F9570214D4E6E00721831 /* EXTScope.m */,
+				044F9571214D4E6E00721831 /* EXTScope.h */,
+			);
+			path = EXTScope;
 			sourceTree = "<group>";
 		};
 		3BD242799BEEB8281DE6C7EE /* Frameworks */ = {
@@ -311,9 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044F9572214D4E6E00721831 /* EXTScope.m in Sources */,
 				044F9529214CA0F400721831 /* ViewController.m in Sources */,
 				044F9534214CA0F400721831 /* main.m in Sources */,
+				044F956B214D4E5F00721831 /* NormalModel.m in Sources */,
 				044F9526214CA0F400721831 /* AppDelegate.m in Sources */,
+				044F956C214D4E5F00721831 /* NormalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +525,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38EDL4Z4G8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ReuseCellPro/PrefixHeader.pch;
 				INFOPLIST_FILE = ReuseCellPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.ReuseCellPro;
@@ -494,6 +543,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38EDL4Z4G8;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ReuseCellPro/PrefixHeader.pch;
 				INFOPLIST_FILE = ReuseCellPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.ReuseCellPro;
