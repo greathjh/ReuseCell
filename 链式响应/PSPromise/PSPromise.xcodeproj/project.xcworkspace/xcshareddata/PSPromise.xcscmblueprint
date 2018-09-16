@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3FB1241E02C9BCC3E7008AA2E44234ABF1EBF47F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "0218c2bd-3302-4d18-834e-e616db058692++500" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3FB1241E02C9BCC3E7008AA2E44234ABF1EBF47F" : 0,
+    "0218c2bd-3302-4d18-834e-e616db058692++500" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "81EF0EC5-8B63-4165-BD2D-70B784791C5E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3FB1241E02C9BCC3E7008AA2E44234ABF1EBF47F" : "PSPromise\/",
+    "0218c2bd-3302-4d18-834e-e616db058692++500" : "..\/..\/..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PSPromise",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PSPromise.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/123.57.44.250:3670\/repos",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0218c2bd-3302-4d18-834e-e616db058692++500"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Poi-Son\/PSPromise.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FB1241E02C9BCC3E7008AA2E44234ABF1EBF47F"
+    }
+  ]
+}

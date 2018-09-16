@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NormalTableViewCell.h"
 #import "NormalModel.h"
+#import "SXArithmeticUnit.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
