@@ -18,7 +18,7 @@
 		044F956B214D4E5F00721831 /* NormalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9568214D4E5F00721831 /* NormalModel.m */; };
 		044F956C214D4E5F00721831 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9569214D4E5F00721831 /* NormalTableViewCell.m */; };
 		044F9572214D4E6E00721831 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9570214D4E6E00721831 /* EXTScope.m */; };
-		044F9598214DE17F00721831 /* SXArithmeticUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9597214DE17F00721831 /* SXArithmeticUnit.m */; };
+		044F9598214DE17F00721831 /* SXCalculatorUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9597214DE17F00721831 /* SXCalculatorUnit.m */; };
 		044F959A214DEECF00721831 /* AritTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F9599214DEECF00721831 /* AritTests.m */; };
 		F85441947F640EC1544377C0 /* libPods-ReuseCellPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */; };
 /* End PBXBuildFile section */
@@ -65,8 +65,8 @@
 		044F9570214D4E6E00721831 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		044F9571214D4E6E00721831 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		044F9573214D4E9400721831 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		044F9596214DE17F00721831 /* SXArithmeticUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXArithmeticUnit.h; sourceTree = "<group>"; };
-		044F9597214DE17F00721831 /* SXArithmeticUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXArithmeticUnit.m; sourceTree = "<group>"; };
+		044F9596214DE17F00721831 /* SXCalculatorUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXCalculatorUnit.h; sourceTree = "<group>"; };
+		044F9597214DE17F00721831 /* SXCalculatorUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXCalculatorUnit.m; sourceTree = "<group>"; };
 		044F9599214DEECF00721831 /* AritTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AritTests.m; sourceTree = "<group>"; };
 		3DE505E07E76D01FCF7BC972 /* Pods-ReuseCellPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCellPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReuseCellPro/Pods-ReuseCellPro.debug.xcconfig"; sourceTree = "<group>"; };
 		5852C7B0FC392E05B8830D9E /* libPods-ReuseCellPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReuseCellPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +102,7 @@
 		044F9518214CA0F400721831 = {
 			isa = PBXGroup;
 			children = (
-				044F9574214DE00E00721831 /* 链式响应 */,
+				044F9574214DE00E00721831 /* 链式编程 */,
 				044F9523214CA0F400721831 /* ReuseCellPro */,
 				044F953C214CA0F500721831 /* ReuseCellProTests */,
 				044F9547214CA0F500721831 /* ReuseCellProUITests */,
@@ -189,13 +189,13 @@
 			path = EXTScope;
 			sourceTree = "<group>";
 		};
-		044F9574214DE00E00721831 /* 链式响应 */ = {
+		044F9574214DE00E00721831 /* 链式编程 */ = {
 			isa = PBXGroup;
 			children = (
-				044F9596214DE17F00721831 /* SXArithmeticUnit.h */,
-				044F9597214DE17F00721831 /* SXArithmeticUnit.m */,
+				044F9596214DE17F00721831 /* SXCalculatorUnit.h */,
+				044F9597214DE17F00721831 /* SXCalculatorUnit.m */,
 			);
-			path = "链式响应";
+			path = "链式编程";
 			sourceTree = "<group>";
 		};
 		3BD242799BEEB8281DE6C7EE /* Frameworks */ = {
@@ -371,7 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044F9572214D4E6E00721831 /* EXTScope.m in Sources */,
-				044F9598214DE17F00721831 /* SXArithmeticUnit.m in Sources */,
+				044F9598214DE17F00721831 /* SXCalculatorUnit.m in Sources */,
 				044F9529214CA0F400721831 /* ViewController.m in Sources */,
 				044F9534214CA0F400721831 /* main.m in Sources */,
 				044F956B214D4E5F00721831 /* NormalModel.m in Sources */,

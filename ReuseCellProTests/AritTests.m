@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "SXArithmeticUnit.h"
+#import "SXCalculatorUnit.h"
 
 @interface AritTests : XCTestCase
 
@@ -31,8 +31,20 @@
 }
 
 - (void)testAritAdd {
-    CGFloat res = [[SXArithmeticUnit alloc] initWithDecimalDigit:1.0].additionArit(2).getResult;
+    CGFloat res = [[SXCalculatorUnit alloc] initWithDecimalDigit:1.0].additionArit(2).getResult;
     NSLog(@"%lf", res);
+}
+
+- (void)testAritAdd1 {
+    CGFloat res = [[SXCalculatorUnit alloc] initWithDecimalDigit:2.0].add(2).getResult;
+    NSLog(@"%lf", res);
+}
+
+- (void)testEquip {
+    BOOL res = [[[SXCalculatorUnit alloc] initWithDecimalDigit:1.3].additionArit(3.2) equal:^BOOL(CGFloat contrast) {
+        return contrast == 4.5;
+    }];
+    NSLog(@"%ld", res);
 }
 
 - (void)testPerformanceExample {
